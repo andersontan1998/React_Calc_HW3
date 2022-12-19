@@ -1,16 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Keypad from './Keypad'
-import Result from './Result'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h6>Google Calculator Clone using React</h6>
+        <div>
+          <h6 style={{"margin-bottom": "0px"}}>Google Calculator Clone using React</h6>
+          <p style={{"fontSize": 16}}> One input operations: click the number before the operator. <br></br> <br></br>
+                Two input operations: click a number, an operator, and then a number. <br></br> <br></br>
+                Click the Rad button to change between Radians and Degrees for Sine, Cosine, and Tangent.</p>
+        </div>
       </header>
-      <div id="keypad">
+      <div id="keypad" style={{"padding-top": "30px"}}>
         <Keypad />
       </div>
     </div>
